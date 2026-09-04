@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pamela Blanco Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">
+        PAMELA BLANCO <span>PHOTOGRAPHY</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#reservar" class="btn-reservar">Reservar Sesión</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#paquetes">Paquetes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#reservar">Reservar Sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <img src="logo.svg" alt="Pamela Blanco Photography" class="hero-logo" />
+      <p class="hero-tagline">Momentos que duran para siempre</p>
+      <a href="#reservar" class="btn-primary">Reservar Sesión</a>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="sobre-mi">
+    <div class="container two-col">
+      <div class="sobre-img">
+        <div class="img-placeholder">
+          <p>Foto de Pamela</p>
+        </div>
+      </div>
+      <div class="sobre-text">
+        <div class="divider"></div>
+        <p class="section-label">Sobre mí</p>
+        <h2>Capturando la belleza<br /><em>de cada momento</em></h2>
+        <p>Soy Pamela Blanco, fotógrafa especializada en retratos de familia, maternidad, recién nacidos y celebraciones especiales. Mi pasión es crear imágenes auténticas que cuenten tu historia.</p>
+        <p>Cada sesión es única, diseñada especialmente para ti y tu familia, en un ambiente cálido y relajado.</p>
+        <a href="#contacto" class="btn-secondary">Conóceme más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <div class="divider"></div>
+      <p class="section-label center">Lo que ofrezco</p>
+      <h2 class="center">Servicios</h2>
+      <div class="servicios-grid">
+
+        <div class="servicio-card">
+          <div class="servicio-foto">
+            <img src="fotos/maternidad.jpg" alt="Maternidad" onerror="this.parentElement.classList.add('sin-foto')" />
+            <span class="foto-label">Maternidad</span>
+          </div>
+          <h3>Maternidad</h3>
+          <p>Sesiones íntimas que celebran la espera. Capturamos la belleza de este momento tan especial.</p>
+          <a href="#paquetes" class="link-ver">Ver paquetes →</a>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-foto">
+            <img src="fotos/recien-nacido.jpg" alt="Recién Nacido" onerror="this.parentElement.classList.add('sin-foto')" />
+            <span class="foto-label">Recién Nacido</span>
+          </div>
+          <h3>Recién Nacido</h3>
+          <p>Los primeros días de tu bebé, eternizados con ternura y cuidado en cada imagen.</p>
+          <a href="#paquetes" class="link-ver">Ver paquetes →</a>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-foto">
+            <img src="fotos/bautizo.jpg" alt="Bautizos" onerror="this.parentElement.classList.add('sin-foto')" />
+            <span class="foto-label">Bautizo</span>
+          </div>
+          <h3>Bautizos</h3>
+          <p>Preservamos cada momento de esta celebración tan significativa para toda la familia.</p>
+          <a href="#paquetes" class="link-ver">Ver paquetes →</a>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-foto">
+            <img src="fotos/comunion.jpg" alt="Primera Comunión" onerror="this.parentElement.classList.add('sin-foto')" />
+            <span class="foto-label">Primera Comunión</span>
+          </div>
+          <h3>Primera Comunión</h3>
+          <p>Un hito importante en la vida de tu hijo. Fotografías elegantes y emotivas.</p>
+          <a href="#paquetes" class="link-ver">Ver paquetes →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER SAGE -->
+  <div class="sage-banner">
+    <h2>Pamela Blanco</h2>
+    <p>Photography · Ciudad de México</p>
+  </div>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="galeria">
+    <div class="container">
+      <div class="divider"></div>
+      <p class="section-label center">Mi trabajo</p>
+      <h2 class="center">Galería</h2>
+      <div class="galeria-grid">
+        <div class="gal-item tall"><p>Foto 1</p></div>
+        <div class="gal-item"><p>Foto 2</p></div>
+        <div class="gal-item"><p>Foto 3</p></div>
+        <div class="gal-item wide"><p>Foto 4</p></div>
+        <div class="gal-item"><p>Foto 5</p></div>
+        <div class="gal-item tall"><p>Foto 6</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAQUETES -->
+  <section id="paquetes" class="paquetes">
+    <div class="container">
+      <div class="divider"></div>
+      <p class="section-label center">Inversión</p>
+      <h2 class="center">Paquetes</h2>
+      <div class="tabs">
+        <button class="tab active" data-tab="maternidad">Maternidad &amp; NB</button>
+        <button class="tab" data-tab="bautizo">Bautizos</button>
+        <button class="tab" data-tab="comunion">Primera Comunión</button>
+      </div>
+
+      <div class="tab-content active" id="tab-maternidad">
+        <div class="paquetes-grid">
+          <div class="paquete-card">
+            <h3>Básico</h3>
+            <p class="precio">Consultar</p>
+            <span class="precio-sub">precio</span>
+            <ul>
+              <li>1 hora de sesión</li>
+              <li>~50 fotografías editadas</li>
+              <li>Alta resolución</li>
+              <li>Galería digital</li>
+              <li>Preview en 60 hrs</li>
+              <li>Entrega en 2 semanas</li>
+            </ul>
+            <a href="#reservar" class="btn-primary small">Reservar</a>
+          </div>
+          <div class="paquete-card featured">
+            <span class="badge">Más popular</span>
+            <h3>Completo</h3>
+            <p class="precio">Consultar</p>
+            <span class="precio-sub">precio</span>
+            <ul>
+              <li>2 horas de sesión</li>
+              <li>~100 fotografías editadas</li>
+              <li>Alta resolución</li>
+              <li>Galería digital</li>
+              <li>Preview en 60 hrs</li>
+              <li>Entrega en 2 semanas</li>
+              <li>1 cambio de outfit</li>
+            </ul>
+            <a href="#reservar" class="btn-primary small">Reservar</a>
+          </div>
+          <div class="paquete-card">
+            <h3>Premium</h3>
+            <p class="precio">Consultar</p>
+            <span class="precio-sub">precio</span>
+            <ul>
+              <li>Sesión completa</li>
+              <li>+150 fotografías editadas</li>
+              <li>Alta resolución</li>
+              <li>Galería digital</li>
+              <li>Preview en 60 hrs</li>
+              <li>Entrega en 2 semanas</li>
+              <li>Múltiples outfits</li>
+            </ul>
+            <a href="#reservar" class="btn-primary small">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-bautizo">
+        <div class="paquetes-grid">
+          <div class="paquete-card featured" style="grid-column: 1 / -1; max-width: 420px; margin: 0 auto;">
+            <h3>Paquete Bautizo</h3>
+            <p class="precio">Consultar</p>
+            <span class="precio-sub">precio</span>
+            <ul>
+              <li>Ceremonia, fotos fuera de la iglesia y evento</li>
+              <li>~100 fotografías editadas</li>
+              <li>Fotos en alta resolución</li>
+              <li>Galería digital</li>
+              <li>Edición de alta calidad</li>
+              <li>Preview en 60 hrs del evento</li>
+              <li>Entrega completa en 2 semanas</li>
+            </ul>
+            <a href="#reservar" class="btn-primary small">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-comunion">
+        <div class="paquetes-grid">
+          <div class="paquete-card featured" style="grid-column: 1 / -1; max-width: 420px; margin: 0 auto;">
+            <h3>Paquete Primera Comunión</h3>
+            <p class="precio">$6,200</p>
+            <span class="precio-sub">MXN</span>
+            <ul>
+              <li>2 horas (Ceremonia, fotos fuera de la iglesia y evento)</li>
+              <li>~100 fotografías editadas</li>
+              <li>Fotos en alta resolución</li>
+              <li>Entregadas en galería digital</li>
+              <li>Edición de alta calidad en cada fotografía</li>
+              <li>Preview a las 60 hrs del evento</li>
+              <li>Entrega completa 2 semanas después del evento</li>
+            </ul>
+            <a href="#reservar" class="btn-primary small">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONDICIONES -->
+  <section class="condiciones">
+    <div class="container narrow">
+      <h3>Condiciones generales</h3>
+      <ul>
+        <li>Si la sesión es fuera de las siguientes zonas tendrá costo extra: Santa Fe, Interlomas, Bosques, Lomas Altas, Herradura, Cuajimalpa.</li>
+        <li>Se requiere el 50% de anticipo para apartar fecha.</li>
+        <li>Si el día del evento se requiere tiempo extra, se cobrará el equivalente tomando el precio base por hora. El tiempo contratado incluye traslados.</li>
+        <li>Si la ceremonia y el evento no están en la misma zona tendrá costo extra.</li>
+        <li>La galería digital estará disponible para su descarga por 4 semanas; después del plazo será eliminada de la plataforma.</li>
+        <li>En caso de cancelar el evento NO habrá devolución, sino que se reagendará la sesión.</li>
+        <li>Los servicios son propiedad intelectual de la fotógrafa y pueden ser utilizados para publicidad de la misma.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESERVAR -->
+  <section id="reservar" class="reservar">
+    <div class="container narrow">
+      <div class="divider"></div>
+      <p class="section-label center">Da el primer paso</p>
+      <h2 class="center">Reserva tu sesión</h2>
+      <p class="center sub">Completa el formulario y me pondré en contacto contigo en menos de 24 horas para confirmar tu fecha.</p>
+      <form class="form-reserva" id="form-reserva">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre completo *</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label>Teléfono *</label>
+            <input type="tel" name="telefono" placeholder="Tu número" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Correo electrónico *</label>
+          <input type="email" name="email" placeholder="tu@correo.com" required />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tipo de sesión *</label>
+            <select name="tipo" required>
+              <option value="">Selecciona...</option>
+              <option>Maternidad</option>
+              <option>Recién Nacido</option>
+              <option>Bautizo</option>
+              <option>Primera Comunión</option>
+              <option>Familia</option>
+              <option>Retratos</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Fecha deseada</label>
+            <input type="date" name="fecha" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea name="mensaje" rows="4" placeholder="Cuéntame más sobre tu sesión ideal..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">Enviar solicitud</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <div class="divider"></div>
+      <p class="section-label center">Hablemos</p>
+      <h2 class="center">Contacto</h2>
+      <div class="contacto-grid">
+        <div class="contacto-item">
+          <span class="contacto-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </span>
+          <h4>Ubicación</h4>
+          <p>Ciudad de México</p>
+        </div>
+        <div class="contacto-item">
+          <span class="contacto-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.85 3.36 2 2 0 0 1 3.83 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/5215580142300" target="_blank">+52 55 8014 2300</a>
+        </div>
+        <div class="contacto-item">
+          <span class="contacto-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <h4>Instagram</h4>
+          <a href="https://instagram.com/pamelablancophoto" target="_blank">@pamelablancophoto</a>
+        </div>
+        <div class="contacto-item">
+          <span class="contacto-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </span>
+          <h4>Correo</h4>
+          <a href="mailto:contacto@pamelablanco.com">Escríbeme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.svg" alt="Pamela Blanco Photography" class="footer-logo-img" />
+      <p style="color:rgba(255,255,255,0.85); font-style:italic; margin-bottom:0.5rem;">+52 55 8014 2300 &nbsp;·&nbsp; @pamelablancophoto</p>
+      <p class="footer-copy">© 2026 Pamela Blanco Photography · Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
